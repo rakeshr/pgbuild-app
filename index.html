@@ -6,9 +6,10 @@
     <h1>Hello PhoneGap Build!</h1>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
-        document.addEventListener('deviceready', function() {
-            navigator.notification.alert('device ready'); 
-        });
+        plugins.navigationBar.init();
+  plugins.navigationBar.hideLeftButton();
+  plugins.navigationBar.hideRightButton();
+  plugins.navigationBar.hide();
     </script>
 </body>
 </html>
